@@ -38,7 +38,7 @@ pipeline
                      catch(Exception e1)
                      {
                         input message: 'remove the container', submitter: 'srikanth'
-                        sh 'sudo -S docker rm -f ja1'
+                        sh 'sudo -S docker rm -f ja-2.4.3'
                         sh 'sudo -S docker run --name ja-2.4.3 -itd jalm-2.4.3'
                      }
                     }
