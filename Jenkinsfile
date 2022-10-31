@@ -7,7 +7,7 @@ pipeline
             {
                 steps
                 {
-                    
+                    git branch: 'magento', url: 'https://github.com/vivekkumargangam/newgit.git'
                 }
             }
             stage('copying the file to root directory')
