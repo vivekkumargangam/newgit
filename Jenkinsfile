@@ -7,7 +7,7 @@
             {
                 steps
                 {
-                    git credentialsId: 'bitbucket', url: 'https://vivekg141@bitbucket.org/vivekg141/multibranch_pipeline.git'
+                    git 'https://github.com/vivekkumargangam/newgit.git'
                 }
             }
         }
