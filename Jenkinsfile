@@ -14,14 +14,14 @@ pipeline
             {
                 steps
                 {
-                    sh 'sudo -S cp -r /var/lib/jenkins/workspace/pipeline/ /root'
+                    sh 'sudo -S cp -r /var/lib/jenkins/workspace/multibranch_pipeline_magento/ /root'
                 }
             }
             stage('bulding the docker image')
             {
                 steps
                 {
-                    sh 'sudo -S docker build -t jalm-2.4.3 -f Dockerfile /root//'
+                    sh 'sudo -S docker build -t jalm-2.4.3 -f Dockerfile /root/multibranch_pipeline_magento/'
                 }
             }
             stage('bulding the docker container')
